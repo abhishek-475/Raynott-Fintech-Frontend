@@ -109,7 +109,7 @@ const Header = ({ onMenuClick }) => {
         {/* Right Section */}
         <div className="flex items-center space-x-3">
           {/* Dark Mode Toggle */}
-          <button
+          {/* <button
             onClick={toggleDarkMode}
             className="p-2 text-gray-600 hover:bg-gray-100 rounded-xl transition-all duration-200 hover:scale-105"
             title={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
@@ -119,7 +119,7 @@ const Header = ({ onMenuClick }) => {
             ) : (
               <Moon className="h-5 w-5" />
             )}
-          </button>
+          </button> */}
 
           {/* Notifications */}
           <div className="relative" ref={notificationsRef}>
@@ -238,20 +238,20 @@ const Header = ({ onMenuClick }) => {
                     <span>My Profile</span>
                   </button>
                   
-                  <button className="w-full flex items-center space-x-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
+                  {/* <button className="w-full flex items-center space-x-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
                     <Settings className="h-4 w-4" />
                     <span>Settings</span>
-                  </button>
+                  </button> */}
                   
-                  <button className="w-full flex items-center space-x-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
+                  {/* <button className="w-full flex items-center space-x-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
                     <Shield className="h-4 w-4" />
                     <span>Security</span>
-                  </button>
+                  </button> */}
                   
-                  <button className="w-full flex items-center space-x-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
+                  {/* <button className="w-full flex items-center space-x-3 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">
                     <HelpCircle className="h-4 w-4" />
                     <span>Help & Support</span>
-                  </button>
+                  </button> */}
                 </div>
 
                 {/* Logout */}

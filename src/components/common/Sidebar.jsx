@@ -215,14 +215,14 @@ const Sidebar = ({ open, setOpen }) => {
             )}
 
             {/* Secondary Navigation */}
-            <div className="space-y-1 pt-4">
+            {/* <div className="space-y-1 pt-4">
               <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider px-3 mb-2">
                 Preferences
               </p>
               {secondaryNavigation.map((item) => (
                 <NavItem key={item.name} item={item} onClick={handleNavClick} />
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
 
