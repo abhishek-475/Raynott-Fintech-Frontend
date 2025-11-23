@@ -13,12 +13,15 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    // Let Vite use defaults for better compatibility
+    // Add rollup options for better chunking
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+        }
+      }
+    }
   },
-  base: '/',
-  // Add this for better production handling
-  preview: {
-    port: 4173,
-    host: true
-  }
+  base: '/', // This is correct for Vercel
 })
